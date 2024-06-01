@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #dfb426;
+  --background-image: url('../public/b3.jpg');
+  --overlay-bg-color: rgba(9, 217, 253, 0.6);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.home {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(27, 85, 0, 0.966), rgba(157, 255, 0, 0.7)), var(--overlay-bg-color), var(--background-image);
+  background-size: cover; /* Ensures the background image covers the entire area */
+  color: #ffffff; /* Set text color to white */
+  font-family: 'Poppins', sans-serif; /* Set font to Poppins */
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background: var(--overlay-bg-color);
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(196, 104, 104, 0.575);
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.overlay p {
+  font-size: 1.5em;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(255, 80, 80, 0.5);
+  font-weight: bold; /* Set font weight to bold */
+}
